@@ -28,6 +28,7 @@ console.log(result); // Prints: 'HELLO MY FRIEND!'
 - [`multiReplace(str: string, replace: { [pattern: string]: string } = {}): string`](#multireplace): Replaces all occurrences of specified patterns in a given string.
 - [`removeAccents(str: string): string`](#removeaccents): Removes all accents from a given string.
 - [`removeSpaces(str: string): string`](#removespaces): Removes leading, trailing, and duplicate spaces in a given string.
+- [`sanitizeJoin(array: any[], separator: string = " "): string`](#sanitizejoin): Joins an array into a string using a specified separator, ignoring any falsy values in the array. It also removes leading, trailing, and duplicate spaces from the resulting string.
 - [`sanitizeStr(str: string, config: { removeAccents?: boolean, toUpperCase?: boolean } = {}): string`](#sanitizeStr): Processes a given string based on a configuration object. By default, it removes leading, trailing, and duplicate spaces. If the configuration object specifies, it can also remove accents and convert the string to uppercase.
 
 ### areStringsSimilar
@@ -115,6 +116,28 @@ The `removeSpaces` removes leading, trailing, and duplicate spaces in a given st
 ```javascript
 const str = "  hello  my  friend!   ";
 const result = removeSpaces(str);
+// result is 'hello my friend!'
+```
+
+### sanitizeJoin
+
+The `sanitizeJoin` function joins an array into a string using a specified separator, ignoring any falsy values in the array. It also removes leading, trailing, and duplicate spaces from the resulting string.
+
+#### Parameters
+
+- `array` (Array): The array to join.
+- `separator` (string): The separator to use. Defaults to a single space.
+
+#### Returns
+
+- (string): The joined string with all leading, trailing, and duplicate spaces removed.
+
+#### Example
+
+```javascript
+const array = ["hello", "", "my", null, "friend!", "  "];
+const separator = " ";
+const result = sanitizeJoin(array, separator);
 // result is 'hello my friend!'
 ```
 
