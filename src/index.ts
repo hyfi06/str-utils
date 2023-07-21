@@ -8,6 +8,7 @@ import { areStringsSimilar } from "./areStringsSimilar";
 import { multiReplace } from "./multiReplaces";
 import { removeAccents } from "./removeAccents";
 import { removeSpaces } from "./removeSpaces";
+import { sanitizeJoin } from "./sanitizeJoin";
 import { sanitizeStr } from "./sanitizeStr";
 
 export {
@@ -15,5 +16,6 @@ export {
   multiReplace,
   removeAccents,
   removeSpaces,
+  sanitizeJoin,
   sanitizeStr,
 };
