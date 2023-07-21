@@ -5,15 +5,14 @@
  */
 
 /**
- * Remove accents in a give string.
+ * Removes all accents from a given string.
+ *
+ * @param {string} str - The string to remove accents from.
+ * @returns {string} The string with all accents removed.
  *
  * @example
- * const str = 'Héctor';
- *
- * removeAccents(str) // return 'Hector'
- *
- * @param {string} str
- * @returns {string}
+ * // returns 'Hector'
+ * removeAccents('Héctor')
  */
 function removeAccents(str: string): string {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");

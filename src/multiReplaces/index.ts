@@ -5,20 +5,16 @@
  */
 
 /**
- * Replaces all pattern:value in a given string.
+ * Replaces all occurrences of the keys in the replace object with the corresponding values in the given string.
+ *
+ * @param {string} str - The string to perform replacements on.
+ * @param {Object.<string, string>} [replace={}]  - An object where the keys are the patterns to be replaced and the values are the replacements. Defaults to an empty object.
+ * @returns {string} A new string where all occurrences of the keys in the replace object in str have been replaced with the corresponding values.
  *
  * @example
- * const str = 'foo biz foobiz';
- * const replace = {
- *  'foo': 'biz',
- *  'biz': 'foo',
- * };
+ * // returns '0 1 2'
  *
- * multiReplaces(str, replace) // return 'foo foo foofoo', replaces in the order of the keys
- *
- * @param {string} str
- * @param {Any} replace
- * @returns {string}
+ * multiReplaces('foo biz baz', { 'foo': 0, 'biz': 1, 'baz': 2 });
  */
 function multiReplace(
   str: string,
