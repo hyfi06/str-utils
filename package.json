@@ -1,0 +1,16 @@
+{
+  "name": "@hyfi06/str-utils",
+  "version": "1.0.0",
+  "description": "Npm package of string utils",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Héctor Olvera Vital <hector@olvitec.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6"
+  }
+}
