@@ -1,16 +1,32 @@
 {
   "name": "@hyfi06/str-utils",
   "version": "1.0.0",
-  "description": "Npm package of string utils",
+  "description": "Package of string utils",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "npx tsc"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyfi06/str-utils.git"
+  },
+  "keywords": [
+    "strings",
+    "utils",
+    "tools",
+    "clear"
+  ],
   "author": "Héctor Olvera Vital <hector@olvitec.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyfi06/str-utils/issues"
+  },
+  "homepage": "https://github.com/hyfi06/str-utils#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.3",
     "@types/node": "^20.4.2",
+    "jest": "^29.6.1",
     "typescript": "^5.1.6"
   }
 }
