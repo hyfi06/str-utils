@@ -16,7 +16,7 @@
  */
 function removeSpaces(str: string): string {
   let newStr: string = str;
-  newStr = newStr.replace(/\s+/g, " ");
+  newStr = newStr.replace(/\s+/g, ' ');
   newStr = newStr.trim();
   return newStr;
 }

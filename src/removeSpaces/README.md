@@ -13,7 +13,7 @@ The `removeSpaces` removes leading, trailing, and duplicate spaces in a given st
 ## Example
 
 ```javascript
-const str = "  hello  my  friend!   ";
+const str = '  hello  my  friend!   ';
 const result = removeSpaces(str);
 // result is 'hello my friend!'
 ```

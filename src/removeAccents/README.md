@@ -13,7 +13,7 @@ The `removeAccents` function removes all accents from a given string.
 ## Example
 
 ```javascript
-const str = "Héctor";
+const str = 'Héctor';
 const result = removeAccents(str);
 // result is 'Hector'
 ```

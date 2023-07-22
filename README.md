@@ -4,6 +4,8 @@ A collection of string utility functions.
 
 ## Install
 
+You can install this package using npm:
+
 ```bash
 npm install --save @hyfi06/str-utils
 ```
@@ -13,9 +15,9 @@ npm install --save @hyfi06/str-utils
 Here is an example of how to use the `sanitizeStr` function:
 
 ```javascript
-const { sanitizeStr } = require("@hyfi06/str-utils");
+const { sanitizeStr } = require('@hyfi06/str-utils');
 
-const str = "  HéllO  my  friend!   ";
+const str = '  HéllO  my  friend!   ';
 const config = { removeAccents: true, toUpperCase: true };
 const result = sanitizeStr(str, config);
 
@@ -47,8 +49,8 @@ The `areStringsSimilar` function compares two strings for similarity. It removes
 #### Example
 
 ```javascript
-const str1 = "  HéllO  my  friend!   ";
-const str2 = "hello my friend!";
+const str1 = '  HéllO  my  friend!   ';
+const str2 = 'hello my friend!';
 const result = areStringsSimilar(str1, str2);
 // result is true
 ```
@@ -69,11 +71,11 @@ The `multiReplace` function replaces all occurrences of the keys in the replace 
 #### Example
 
 ```javascript
-const str = "foo biz baz";
+const str = 'foo biz baz';
 const replace = {
-  foo: "0",
-  biz: "1",
-  baz: "2",
+  foo: '0',
+  biz: '1',
+  baz: '2',
 };
 const result = multiReplace(str, replace);
 // result is '0 1 2'
@@ -94,7 +96,7 @@ The `removeAccents` function removes all accents from a given string.
 #### Example
 
 ```javascript
-const str = "Héctor";
+const str = 'Héctor';
 const result = removeAccents(str);
 // result is 'Hector'
 ```
@@ -114,7 +116,7 @@ The `removeSpaces` removes leading, trailing, and duplicate spaces in a given st
 #### Example
 
 ```javascript
-const str = "  hello  my  friend!   ";
+const str = '  hello  my  friend!   ';
 const result = removeSpaces(str);
 // result is 'hello my friend!'
 ```
@@ -135,8 +137,8 @@ The `sanitizeJoin` function joins an array into a string using a specified separ
 #### Example
 
 ```javascript
-const array = ["hello", "", "my", null, "friend!", "  "];
-const separator = " ";
+const array = ['hello', '', 'my', null, 'friend!', '  '];
+const separator = ' ';
 const result = sanitizeJoin(array, separator);
 // result is 'hello my friend!'
 ```
@@ -159,7 +161,7 @@ The `sanitizeStr` function processes a given string based on a configuration obj
 #### Example
 
 ```javascript
-const str = "  HéllO  my  friend!   ";
+const str = '  HéllO  my  friend!   ';
 const config = {
   removeAccents: true,
   toUpperCase: true,

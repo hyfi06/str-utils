@@ -18,12 +18,12 @@
  */
 function multiReplace(
   str: string,
-  replace: { [pattern: string]: string } = {}
+  replace: { [pattern: string]: string } = {},
 ): string {
   let newStr: string = str;
   Object.entries(replace).forEach((entry) => {
     const [pattern, value] = entry;
-    newStr = newStr.replace(new RegExp(pattern, "g"), value);
+    newStr = newStr.replace(new RegExp(pattern, 'g'), value);
   });
   return newStr;
 }

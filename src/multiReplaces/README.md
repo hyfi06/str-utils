@@ -14,11 +14,11 @@ The `multiReplace` function replaces all occurrences of the keys in the replace 
 ## Example
 
 ```javascript
-const str = "foo biz baz";
+const str = 'foo biz baz';
 const replace = {
-  foo: "0",
-  biz: "1",
-  baz: "2",
+  foo: '0',
+  biz: '1',
+  baz: '2',
 };
 const result = multiReplace(str, replace);
 // result is '0 1 2'

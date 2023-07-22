@@ -14,8 +14,8 @@ The `sanitizeJoin` function joins an array into a string using a specified separ
 ## Example
 
 ```javascript
-const array = ["hello", "", "my", null, "friend!", "  "];
-const separator = " ";
+const array = ['hello', '', 'my', null, 'friend!', '  '];
+const separator = ' ';
 const result = sanitizeJoin(array, separator);
 // result is 'hello my friend!'
 ```

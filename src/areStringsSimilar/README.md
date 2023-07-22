@@ -14,8 +14,8 @@ The `areStringsSimilar` function compares two strings for similarity. It removes
 ## Example
 
 ```javascript
-const str1 = "  HéllO  my  friend!   ";
-const str2 = "hello my friend!";
+const str1 = '  HéllO  my  friend!   ';
+const str2 = 'hello my friend!';
 const result = areStringsSimilar(str1, str2);
 // result is true
 ```

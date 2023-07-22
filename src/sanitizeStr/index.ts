@@ -6,8 +6,8 @@
  * @requires removeSpaces
  */
 
-import { removeAccents } from "../removeAccents";
-import { removeSpaces } from "../removeSpaces";
+import { removeAccents } from '../removeAccents';
+import { removeSpaces } from '../removeSpaces';
 
 /**
  * Processes a given string based on a configuration object. By default, it removes leading, trailing, and duplicate spaces. If the configuration object specifies, it can also remove accents and convert the string to uppercase.
@@ -33,7 +33,7 @@ function sanitizeStr(
   config: {
     removeAccents?: boolean;
     toUpperCase?: boolean;
-  } = {}
+  } = {},
 ): string {
   let newStr = removeSpaces(str);
   if (config.toUpperCase) {

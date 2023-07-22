@@ -16,7 +16,7 @@ The `sanitizeStr` function processes a given string based on a configuration obj
 ## Example
 
 ```javascript
-const str = "  HéllO  my  friend!   ";
+const str = '  HéllO  my  friend!   ';
 const config = {
   removeAccents: true,
   toUpperCase: true,

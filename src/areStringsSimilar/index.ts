@@ -6,8 +6,8 @@
  * @requires removeSpaces
  */
 
-import { removeAccents } from "../removeAccents";
-import { removeSpaces } from "../removeSpaces";
+import { removeAccents } from '../removeAccents';
+import { removeSpaces } from '../removeSpaces';
 
 /**
  * Compares two strings for similarity. Removes leading, trailing, and duplicate spaces, removes accents, and converts the strings to uppercase before comparing them.
